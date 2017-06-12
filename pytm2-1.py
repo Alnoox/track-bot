@@ -6,8 +6,7 @@ import time
 last_time = time.time()
 while(True):
     printscreen_pil = ImageGrab.grab(bbox=(0,40,800,640))
-    ##printscreen_numpy = np.array(printscreen_pil.getdata(),dtype='uint8')\
-    .reshape((printscreen_pil.size[1],printscreen_pil.size[0],3))
+    ##printscreen_numpy = np.array(printscreen_pil.getdata(),dtype='uint8')
 
     print('Loop took {} seconds'.format(time.time()-last_time))
     last_time = time.time()
